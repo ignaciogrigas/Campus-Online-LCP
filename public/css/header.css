@@ -1,0 +1,113 @@
+* {
+  box-sizing: border-box;
+}
+header {
+  font-family: "Poppins";
+  background-color: #5a359a;
+  padding: 5vw;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+#logo img {
+  height: 100%;
+}
+#logo {
+  width: 25%;
+  height: 12vw;
+}
+#main_menu {
+  width: 75%;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: flex-end;
+}
+#notifications_bell {
+  width: fit-content;
+}
+header .fa-circle {
+  display: none;
+  margin-right: -4.8vw;
+  color: #37d187;
+  font-size: 0.8rem;
+  position: relative;
+  z-index: 1;
+  bottom: 12px;
+  right: 12px;
+}
+header .fa-xmark {
+  display: none;
+}
+header .fa-bars,
+header .fa-bell,
+header .fa-xmark {
+  font-size: 1.7rem;
+  color: white;
+  padding-left: 8vw;
+  cursor: pointer;
+}
+#mobile_menu {
+  display: none;
+  width: 100%;
+}
+#mobile_menu ul {
+  width: fit-content;
+}
+#mobile_menu ul li {
+  padding-top: 5vw;
+  width: fit-content;
+}
+#mobile_menu ul li a {
+  color: white;
+  font-size: 1.3rem;
+}
+#profile_photo,
+.fa-right-from-bracket {
+  display: none;
+}
+
+@media screen and (min-width: 769px) {
+  header {
+    padding: 1.3vw 6.25vw 1.3vw 6.25vw;
+    max-width: 1920px;
+  }
+  #logo {
+    width: 25%;
+    height: 3vw;
+  }
+  header .fa-circle {
+    display: none;
+    margin-right: -4.8vw;
+    color: #37d187;
+    font-size: 0.8rem;
+    position: relative;
+    z-index: 1;
+    bottom: 12px;
+    right: 12px;
+  }
+  .fa-bell,
+  .fa-right-from-bracket {
+    display: block;
+    font-size: 1.25rem;
+    color: white;
+    padding-left: 1.5625vw;
+    cursor: pointer;
+  }
+  .fa-bars,
+  #mobile_menu {
+    display: none;
+  }
+  #profile_photo {
+    display: block;
+    padding-left: 1.5625vw;
+  }
+
+  #profile_photo img {
+    height: 3vw;
+    width: 3vw;
+    object-fit: cover;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+}

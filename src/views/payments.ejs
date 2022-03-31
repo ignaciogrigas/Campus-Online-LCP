@@ -1,0 +1,31 @@
+<%-include("./includes/head")%>
+<body>
+    <%-include("./includes/header")%>
+    <%-include("./includes/contactModals")%>
+    <div class="profile_content">
+        <%-include("./includes/profile-pc")%>
+        <section id="payments">
+            <% for (let h= 0 ;h<3 ;h++){%>
+                <h3>Nombre del curso</h3>
+                <table>
+                    <tr>
+                        <th>Cuota</th>
+                        <th>Fecha</th>
+                        <th class="amount">Importe</th>
+                        <th>Estado</th>
+                    </tr>
+                    <% for (let j =0 ; j<6;j++){%>
+                        <tr>
+                            <td>3</td>
+                            <td>02/02/2021</td>
+                            <td class="amount">$300</td>
+                            <td><a href="#">Pagar</a></td> <!--<td>Pago</td>-->
+                        </tr>
+                    <%}%>
+                </table>
+            <%}%>
+        </section>
+    </div>
+    <%-include("./includes/footer")%>
+</body>
+</html>

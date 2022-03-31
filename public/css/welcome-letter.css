@@ -1,0 +1,57 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: #f5f5f5;
+}
+#welcome_letter_figure {
+  display: block;
+  margin: 8vw;
+}
+#welcome_letter {
+  width: 83.73vw;
+  height: 118.418vw;
+  object-fit: fill;
+  border-radius: 20px;
+}
+#icons i {
+  font-size: 1.25rem;
+  color: #575757;
+}
+#icons {
+  margin: 8vw;
+  display: flex;
+  flex-flow: row wrap;
+}
+#pagination {
+  margin-left: 80%;
+}
+@media screen and (min-width: 769px) {
+  body {
+    font-family: "Poppins";
+  }
+  #whole_letter {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+  }
+  #welcome_letter {
+    width: 100%;
+    height: fit-content;
+    border-radius: 30px;
+  }
+  #welcome_letter_figure {
+    width: 60%;
+    margin: 3.125vw;
+  }
+  #icons i {
+    font-size: 1.5rem;
+  }
+  #icons {
+    width: 60%;
+    margin: 3.125vw;
+  }
+  #pagination {
+    margin-left: 90%;
+  }
+}

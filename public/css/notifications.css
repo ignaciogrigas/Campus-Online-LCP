@@ -1,0 +1,68 @@
+* {
+  box-sizing: border-box;
+}
+#notifications {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  margin-top: 5vw;
+  font-family: "Poppins";
+  background-color: white;
+  border: 2px solid #7070706b;
+  border-radius: 31px;
+}
+#notifications h4 {
+  text-align: center;
+  font-size: 1.5rem;
+  background-color: #d9d9d9;
+  color: #575757;
+  font-weight: 400;
+  padding: 5vw;
+  border-radius: 31px 31px 0 0;
+}
+#notifications ul {
+  padding: 0 5vw 5vw 5vw;
+}
+#notifications ul li {
+  padding-top: 5.2vw;
+  border-bottom: 2px solid #575757;
+}
+#notifications ul li h5 {
+  font-size: 1.25rem;
+  padding-bottom: 5vw;
+  font-weight: 350;
+}
+#notifications ul li p {
+  font-size: 1.1rem;
+  padding-bottom: 5vw;
+  font-weight: 295;
+}
+@media screen and (min-width: 769px) {
+  #notifications {
+    border: 0.5px solid #7070706b;
+    border-radius: 31px;
+    left: 72vw;
+    margin-top: 0;
+  }
+  #notifications h4 {
+    font-size: 0.85rem;
+    font-weight: 350;
+    padding: 1.56vw;
+  }
+  #notifications ul {
+    padding: 0 1.86vw 1.86vw 1.86vw;
+  }
+  #notifications ul li {
+    padding-top: 1.56vw;
+    border-bottom: 1px solid #575757;
+  }
+  #notifications ul li h5 {
+    font-size: 0.95rem;
+    padding-bottom: 1.56vw;
+    font-weight: 300;
+  }
+  #notifications ul li p {
+    font-size: 0.65rem;
+    padding-bottom: 1.56vw;
+  }
+}

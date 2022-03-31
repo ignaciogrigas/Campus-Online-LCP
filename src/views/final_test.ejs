@@ -1,0 +1,35 @@
+<%-include("./includes/head")%>
+<body>
+    <%-include("./includes/header")%>
+    <%-include("./includes/contactModals")%>
+    <section id="test_info">
+        <h2>Test de la unidad</h2>
+        <form action="#" method="POST" id= "test_form">
+            <div class="question_containers">
+                <h5>Acá va la preguntar a realizar</h5>
+                <%for ( let i=0;i<2;i++){%>
+                    <div class="radio_answers">
+                        <input type="radio" id="answer_<%=i%>" name="drone" value="#">
+                        <label for="answer_<%=i%>">Respuesta</label>
+                    </div>
+                <%}%>
+            </div>
+            <div class="question_containers">
+                <h5>Acá va la preguntar a realizar</h5>
+                <%for ( let j=0;j<2;j++){%>
+                    <div class="checkbox_answers">
+                        <input type="checkbox" id="answer_<%=j%>" name="drone" value="#">
+                        <label for="answer_<%=j%>">Respuesta</label>
+                    </div>
+                <%}%>
+            </div>
+            <div class="question_containers">
+                <h5>Acá va la preguntar a realizar</h5>
+                <textarea>Escriba su respuesta aqui</textarea>
+            </div>
+            <button type="submit">Enviar test</button>
+        </form>
+    </section>
+    <%-include("./includes/footer")%>
+</body>
+</html>

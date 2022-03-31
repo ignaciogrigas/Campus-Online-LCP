@@ -1,0 +1,51 @@
+<%-include("./includes/head")%>
+<body>
+    <%-include("./includes/header")%>
+    <%-include("./includes/contactModals")%>
+    <div id="single_class_content">
+        <div id="current_class">
+            <h3>Nombre de clase</h3>
+            <i class="fa-solid fa-angle-down"></i>
+        </div>
+        <section id="modules">
+            <h2>Módulos</h2>
+            <ul>
+                <% for (let i = 0; i<2 ; i++){%>
+                    <li>
+                        <div class="module_name">
+                            <h3>Nombre de clase</h3>
+                            <i class="fa-solid fa-angle-down deployer"></i>
+                        </div>
+                        <ul class="single_classes_list">
+                            <% for( let j = 0; j<2;j++){%>
+                                <li class="single_class_name">
+                                    <i class="fa-solid fa-circle"></i>
+                                    <a href="#"><h3>Nombre de clase</h3></a>
+                                </li>
+                            <%}%>
+                        </ul>
+                    </li>
+                <%}%>
+                <li>
+                    <a href="#" id="program"><h3>Programa</h3></a>
+                </li>
+            </ul>
+        </section>
+        <section id="video_material">
+            <h3 id="current_class_pc">Nombre de clase</h3>
+            <video controls>
+                <source src="/videos/default_video.mp4" type="video/mp4">
+                Tu navegador no es compatible con el reproductor
+            </video>
+            <div id="test_info">
+                <a href="#" id="class_test">Test de lección</a>
+                <a href="#" id="test_results">Resultado del test</a>
+            </div>
+            <iframe src="/documents/Carta_de_Bienvenida_LCP (1).pdf"></iframe>
+            <a href="#">Siguiente Clase</a>
+        </section>
+    </div>
+    <%-include("./includes/footer")%>
+    <script src="/js/modulesDeployer.js"></script>
+</body>
+</html>

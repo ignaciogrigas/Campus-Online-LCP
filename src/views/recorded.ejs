@@ -1,0 +1,24 @@
+<%-include("./includes/head")%>
+<body>
+    <%-include("./includes/header")%>
+    <%-include("./includes/contactModals")%>
+    <h2>Clases grabadas</h2>
+    <a href="#" id="calendar_link_pc">Calendario</a>
+    <section id="all_recorded_classes">
+        <table>
+            <tr>
+                <th class="class_description">Descripción</th>
+                <th class="class_date">Fecha</th>
+            </tr>
+            <% for (let i =0 ; i<6;i++){%>
+                <tr>
+                    <td class="class_description">Nombre de clase</td>
+                    <td class="class_date">02/02/2021</td>
+                </tr>
+            <%}%>
+        </table>
+    </section>
+    <a href="#" id="calendar_link_mobile">Calendario</a>
+    <%-include("./includes/footer")%>
+</body>
+</html>

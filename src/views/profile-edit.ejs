@@ -1,0 +1,39 @@
+<%-include("./includes/head")%>
+    <body>
+        <%-include("./includes/header")%>
+        <%-include("./includes/contactModals")%>
+        <form action="#" method="POST" id= "profile_edit">
+            <section id="profile_data">
+                <article id="profile_photo_edit">
+                    <label for = "profile_photo_input">
+                        <img id="profile_photo_old" src="/images/default_pofile.jpg">
+                        <p>Cambiar foto</p>
+                    </label>
+                    <input type="file" name="profile_photo_input" id="profile_photo_input">
+                </article>
+                <article id="profile_input_data">
+                    <input type="text" placeholder="Apellido">
+                    <input type="text" placeholder="Nombre">
+                    <select id="nacionality">
+                        <option value="1" selected>Argentino/a</option>
+                        <option value="2" >Colombiano/a</option>
+                    </select>
+                    <select id="sex">
+                            <option value="1" selected>Masculino</option>
+                            <option value="2" >Femenino</option>
+                            <option value="3" >Otro</option>
+                        </select>
+                        <input type="date" id="birth_date">
+
+                        <h2>Datos de contacto</h2>
+
+                        <input type="email" id="email" placeholder="apellido.nombre@gmail.com">
+                        <input type="tel" id="telephone" placeholder="+54 9 11 76256584">
+                        <input type="number" min="11" max="11" placeholder="27245862145">
+                </article>
+            </section>
+            <button type="submit">Guardar</button>
+        </form>
+        <%-include("./includes/footer")%>
+    </body>
+</html>

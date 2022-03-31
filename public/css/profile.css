@@ -1,0 +1,126 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins";
+  background-color: #f5f5f5;
+}
+#profile_data {
+  text-align: center;
+  background-color: white;
+  border-radius: 20px;
+  border: 1px solid #7070706b;
+  margin: auto;
+  margin-top: 8vw;
+  margin-bottom: 8vw;
+  width: 84%;
+  padding: 8vw;
+}
+#profile_photo_mobile {
+  display: block;
+  margin-bottom: 8vw;
+}
+
+#profile_photo_mobile img {
+  height: 50vw;
+  width: 50vw;
+  object-fit: cover;
+  border-radius: 50%;
+}
+#profile_data h3 {
+  font-size: 1.1rem;
+  font-weight: 450;
+  color: #575757;
+  margin-bottom: 1.5vw;
+}
+#profile_data h2 {
+  font-size: 1.25rem;
+  font-weight: 450;
+  color: #575757;
+  margin-bottom: 1.5vw;
+  width: 100%;
+}
+#profile_data p {
+  font-size: 0.9rem;
+  color: #575757;
+  margin-bottom: 1.5vw;
+  margin-right: 1.5vw;
+}
+#edit_profile_pc,
+#edit_profile_mobile {
+  font-size: 1.1rem;
+  text-align: center;
+  display: block;
+  background-color: #37d187;
+  color: white;
+  padding: 4vw;
+  border-radius: 20px;
+  margin: 0 8vw 8vw 8vw;
+  border: none;
+}
+#main_profile_data {
+  display: flex;
+  flex-flow: row wrap;
+  margin-bottom: 6.5vw;
+  align-items: center;
+  justify-content: center;
+}
+#edit_profile_pc {
+  display: none;
+}
+@media screen and (min-width: 769px) {
+  #profile_data {
+    max-width: 1155px;
+    margin-top: 3.125vw;
+    width: 60%;
+    padding: 3.125vw 3.125vw 0 3.125vw;
+    margin-left: 3vw;
+    margin-right: 6.25vw;
+    background-color: white;
+    text-align: center;
+    background-color: white;
+    border-radius: 20px;
+    border: 1px solid #7070706b;
+    height: fit-content;
+  }
+  #profile_photo_mobile {
+    display: none;
+  }
+
+  #main_profile_data,
+  #main_contact_data {
+    display: flex;
+    flex-flow: row wrap;
+    margin-bottom: 3.125vw;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  #profile_data h2 {
+    font-size: 1.65rem;
+    text-align: left;
+    margin-bottom: 1vw;
+  }
+  #main_contact_data h3 {
+    font-size: 1.5rem;
+    text-align: left;
+    margin-bottom: 1vw;
+    width: 100%;
+  }
+  #profile_data p {
+    text-align: left;
+    font-size: 01.1rem;
+    width: 70%;
+    margin-bottom: 1vw;
+  }
+  #edit_profile_pc {
+    display: block;
+    padding: 1vw;
+    border-radius: 20px;
+    margin: 3.125vw;
+    margin-left: 60%;
+    width: 40%;
+  }
+  #edit_profile_mobile {
+    display: none;
+  }
+}

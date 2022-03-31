@@ -1,0 +1,188 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins";
+  background-color: #f5f5f5;
+}
+#profile_edit {
+  text-align: center;
+}
+#profile_data {
+  text-align: center;
+  background-color: white;
+  border-radius: 20px;
+  border: 1px solid #7070706b;
+  margin: auto;
+  margin-top: 8vw;
+  margin-bottom: 8vw;
+  width: 84%;
+  padding: 8vw;
+}
+label {
+  display: block;
+  margin-bottom: 4vw;
+}
+
+#profile_photo_old {
+  height: 50vw;
+  width: 50vw;
+  object-fit: cover;
+  border-radius: 50%;
+}
+label p {
+  font-size: 0.9rem;
+  text-align: center;
+  display: block;
+  background-color: #37d187;
+  color: white;
+  padding: 3vw;
+  border-radius: 20px;
+  margin: 8vw;
+  border: none;
+}
+input[type="file"] {
+  display: none;
+}
+input {
+  padding: 3vw;
+  border: 1px solid #7070706b;
+  border-radius: 20px;
+  margin-bottom: 7vw;
+  width: 100%;
+  background-color: white;
+}
+form select,
+[type="date"] {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  border: 1px solid #7070706b;
+  padding: 3vw;
+  background-color: white;
+  border-radius: 20px;
+  margin-bottom: 7vw;
+  width: 100%;
+  color: #575757;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+button {
+  width: 84%;
+  background-color: #37d187;
+  color: white;
+  padding: 3vw;
+  border-radius: 20px;
+  margin-bottom: 7vw;
+  border: none;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+form h2 {
+  font-size: 1.25rem;
+  font-weight: 450;
+  color: #575757;
+  margin: 5vw 0;
+}
+input::-webkit-input-placeholder {
+  font-size: 0.85rem;
+}
+#salutation_two {
+  font-size: 0.9rem;
+  color: #575757;
+  margin: 0 8vw;
+  margin-bottom: 5vw;
+  line-height: 1.25rem;
+}
+#profile_edit h4 {
+  font-size: 0.85rem;
+  color: #5a359a;
+  margin-bottom: 2vw;
+  line-height: 1.15rem;
+}
+@media screen and (min-width: 769px) {
+  #profile_edit {
+    text-align: right;
+    background-color: white;
+    border-radius: 20px;
+    border: 1px solid #7070706b;
+    margin: 3.125vw 6.25vw;
+    max-width: 1680px;
+    padding: 3.125vw;
+  }
+  #profile_data {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: none;
+    border-radius: none;
+    border: none;
+    margin: 0;
+    width: 100%;
+    padding: 0;
+  }
+  #profile_photo_edit {
+    width: 25%;
+    margin-right: 6.25vw;
+  }
+  label {
+    margin-bottom: 0;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+  }
+
+  #profile_photo_old {
+    height: 15vw;
+    width: 15vw;
+  }
+  label p {
+    padding: 1vw;
+    margin: 1.56vw 0;
+    width: 100%;
+  }
+  #profile_input_data {
+    width: 67%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: left;
+  }
+  input,
+  form select,
+  [type="date"] {
+    margin-right: 1vw;
+    padding: 1vw;
+    background-color: white;
+    border-radius: 30px;
+    margin-bottom: 3.125vw;
+    width: 46%;
+  }
+  button {
+    display: block;
+    padding: 1vw;
+    border-radius: 20px;
+    margin: 3.125vw 0;
+    margin-left: 67%;
+    width: 30%;
+  }
+  form h2 {
+    text-align: left;
+    font-size: 1.5rem;
+    width: 100%;
+    margin: 3.125vw 0;
+  }
+  input::-webkit-input-placeholder {
+    font-size: 0.85rem;
+  }
+  #salutation {
+    margin-top: 0vw;
+    margin-bottom: 1.5vw;
+  }
+  #salutation_two {
+    margin: 0;
+    margin-bottom: 3.125vw;
+    line-height: 1.25rem;
+    text-align: left;
+  }
+}

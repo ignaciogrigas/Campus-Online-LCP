@@ -1,0 +1,140 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins";
+  background-color: #5a359a;
+  display: flex;
+  justify-content: center;
+}
+section {
+  display: block;
+  background-color: white;
+  border-radius: 20px;
+  padding: 7vw;
+  width: 70%;
+  margin: 25% auto;
+  max-width: 640px;
+  height: fit-content;
+}
+figure {
+  text-align: center;
+  margin-bottom: 3.6vw;
+}
+img {
+  height: 14vw;
+}
+h2 {
+  color: #575757;
+  font-size: 1rem;
+  margin-bottom: 7vw;
+  text-align: center;
+}
+input {
+  padding: 3vw;
+  border: 1px solid #7070706b;
+  border-radius: 10px;
+  margin-bottom: 7vw;
+  width: 100%;
+}
+input::-webkit-input-placeholder {
+  font-size: 0.8rem;
+}
+form p {
+  color: #5a359a;
+  font-size: 0.7rem;
+  text-align: right;
+  margin-bottom: 7vw;
+}
+button {
+  width: 100%;
+  background-color: #37d187;
+  color: white;
+  padding: 3vw;
+  border-radius: 20px;
+  margin-bottom: 7vw;
+  border: none;
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+p {
+  text-align: center;
+  font-size: 0.8rem;
+  margin-bottom: 7vw;
+}
+#social_media {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+.fa-facebook-f,
+.fa-google {
+  color: white;
+  font-size: 1.2rem;
+}
+#facebook {
+  background-color: #004cffce;
+  border-radius: 50%;
+  width: 10vw;
+  height: 10vw;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+}
+#gmail {
+  background-color: #ff3c00bd;
+  border-radius: 50%;
+  width: 10vw;
+  height: 10vw;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (min-width: 769px) {
+  section {
+    padding: 2.5vw;
+    width: 35%;
+    margin: 5% auto;
+  }
+  figure {
+    text-align: center;
+    margin-bottom: 2.5vw;
+  }
+  img {
+    height: 4vw;
+  }
+  h2 {
+    margin-bottom: 2.5vw;
+  }
+  input {
+    padding: 1.25vw;
+    border-radius: 20px;
+    margin-bottom: 2.5vw;
+  }
+  input::-webkit-input-placeholder {
+    font-size: 0.65rem;
+  }
+  form p {
+    margin-bottom: 2.5vw;
+  }
+  button {
+    width: 100%;
+    padding: 1.25vw;
+    margin-bottom: 2.5vw;
+  }
+  p {
+    margin-bottom: 2.5vw;
+  }
+  .fa-facebook-f,
+  .fa-google {
+    font-size: 1rem;
+  }
+  #facebook,
+  #gmail {
+    width: 4.5vw;
+    height: 4.5vw;
+  }
+}

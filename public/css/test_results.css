@@ -1,0 +1,121 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins";
+  background-color: #f5f5f5;
+}
+#results_content {
+  padding: 8vw 8vw 0 8vw;
+}
+#results_content h2 {
+  color: #575757;
+  font-size: 1.5rem;
+  font-weight: 450;
+}
+.try_container {
+  text-align: center;
+  background-color: white;
+  border-radius: 20px;
+  border: 1px solid #7070706b;
+  width: 100%;
+  padding: 8vw;
+  margin-top: 8vw;
+}
+.try_container h3 {
+  color: #575757;
+  font-size: 1.25rem;
+  font-weight: 400;
+  margin-bottom: 8vw;
+}
+.try_container h5 {
+  color: #575757;
+  font-size: 1.1rem;
+  font-weight: 400;
+  margin-bottom: 3vw;
+  text-align: left;
+}
+.radio_answers {
+  margin-bottom: 2.5vw;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+.fa-circle {
+  margin-right: 1.5vw;
+}
+.try_container p {
+  font: size 1.1rem;
+  color: #575757;
+}
+/* SI LA RESPUESTA ES CORRECTA
+.try_container h3{
+    color:#37d187
+}
+.fa-circle{
+    color:#37d187
+}
+.try_container p{
+    color:#37d187
+}*/
+/*SI LA RESPUESTA ES INCORRECTA
+.try_container h3{
+    color:#5a359a
+}
+.fa-circle {
+  color: #5a359a;
+}
+.try_container p {
+  color: #5a359a;
+}*/
+
+#back_to_class {
+  margin-top: 8vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#back_to_class a {
+  margin-right: 1.5vw;
+}
+#back_to_class a,
+#back_to_class h4 {
+  color: #575757;
+  font-size: 1.1rem;
+}
+@media screen and (min-width: 769px) {
+  #results_content {
+    padding: 3.125vw 3.125vw 0 3.125vw;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+  #results_content h2 {
+    width: 100%;
+  }
+  .try_container {
+    width: 40%;
+    padding: 3.125vw;
+    margin-top: 3.125vw;
+  }
+  .try_container h3 {
+    margin-bottom: 3.125vw;
+  }
+  .try_container h5 {
+    margin-bottom: 1.5vw;
+  }
+  .radio_answers {
+    margin-bottom: 1.5vw;
+  }
+  .fa-circle {
+    margin-right: 0.5vw;
+  }
+  #back_to_class {
+    width: 100%;
+    margin-top: 3.125vw;
+  }
+  #back_to_class a {
+    margin-right: 1vw;
+  }
+}

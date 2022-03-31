@@ -1,0 +1,45 @@
+#profile_pc {
+  display: none;
+}
+@media screen and (min-width: 769px) {
+  .profile_content {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  #profile_pc {
+    display: block;
+    max-width: 405px;
+    background-color: white;
+    text-align: center;
+    background-color: white;
+    border-radius: 20px;
+    border: 1px solid #7070706b;
+    padding: 3.125vw;
+    width: 21.093%;
+    height: fit-content;
+    margin-left: 6.25vw;
+    margin-right: 3vw;
+    margin-top: 3.125vw;
+  }
+  #profile_photo_pc {
+    margin-bottom: 3.125vw;
+  }
+  #profile_photo_pc img {
+    height: 15vw;
+    width: 15vw;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  #profile_pc ul li a {
+    font-size: 1.2rem;
+    color: #575757;
+    font-weight: 450;
+  }
+  #profile_pc ul li {
+    padding: 1.56vw 0;
+    border-bottom: 1px solid #7070706b;
+  }
+  #profile_pc li :hover {
+    color: #5a359a;
+  }
+}

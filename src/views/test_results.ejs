@@ -1,0 +1,28 @@
+<%-include("./includes/head")%>
+<body>
+    <%-include("./includes/header")%>
+    <%-include("./includes/contactModals")%>
+    <div id="results_content">
+        <h2>Resultados de test de la lección</h2>
+        <%for ( let i = 0 ; i<2;i++){%>
+            <div class="try_container">
+                <h3>Intento n°1 Aprobado</h3>
+                <%for (let j=0 ; j<3;j++){%>
+                    <h5>Acá va la preguntar a realizar</h5>
+                    <%for ( let k=0;k<2;k++){%>
+                        <div class="radio_answers">
+                            <i class="fa-solid fa-circle" id="circle_answer_<%=k%>_question_<%=j%>"></i>
+                            <p id="text_answer_<%=k%>_question_<%=j%>">Respuesta</p>
+                        </div>
+                    <%}%>
+                <%}%>
+            </div>
+        <%}%>
+        <div id="back_to_class">
+            <a href="#"><i class="fa-solid fa-angle-left"></i></a>
+            <h4>Volver a la lección</h4>
+        </div>
+    </div>
+    <%-include("./includes/footer")%>
+</body>
+</html>

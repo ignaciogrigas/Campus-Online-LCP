@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins";
+  background-color: #f5f5f5;
+}
+#all_classes {
+  text-align: center;
+  background-color: white;
+  border-radius: 20px;
+  border: 1px solid #7070706b;
+  padding: 8vw 8vw 0 8vw;
+  margin: 8vw;
+}
+#all_classes h2 {
+  font-size: 1.6rem;
+  margin-bottom: 8vw;
+  color: #575757;
+  font-weight: 450;
+}
+#single_class {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: right;
+}
+#single_class figure {
+  height: 17vw;
+  width: 17vw;
+  margin-right: 5vw;
+}
+#single_class img {
+  height: 17vw;
+  width: 17vw;
+  object-fit: cover;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#speaker {
+  text-align: left;
+  display: flex;
+  flex-flow: column;
+  align-items: baseline;
+  justify-content: center;
+  width: 67%;
+}
+#speaker h3 {
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: #575757;
+  margin-bottom: 1vw;
+}
+#speaker p {
+  font-size: 0.8rem;
+  color: #575757;
+}
+#single_class h4 {
+  color: #5a359a;
+  margin: 3.125vw 0 8vw 0;
+}
+@media screen and (min-width: 769px) {
+  #all_classes {
+    text-align: left;
+    padding: 3.125vw 3.125vw 0 3.125vw;
+    margin: 3.125vw;
+  }
+  #all_classes h2 {
+    font-size: 1rem;
+    margin-bottom: 2vw;
+    font-weight: 400;
+  }
+  #single_class {
+    justify-content: left;
+    align-items: center;
+    margin-bottom: 3.125vw;
+  }
+  #single_class figure {
+    height: 7vw;
+    width: 7vw;
+    margin-right: 1vw;
+    height: fit-content;
+  }
+  #single_class img {
+    height: 7vw;
+    width: 7vw;
+  }
+  #single_class h4 {
+    margin: 0;
+  }
+  #speaker {
+    margin-left: 3.125vw;
+  }
+}

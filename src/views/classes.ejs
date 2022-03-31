@@ -1,0 +1,22 @@
+<%-include("./includes/head")%>
+<body>
+    <%-include("./includes/header")%>
+    <%-include("./includes/contactModals")%>
+    <section id="all_classes">
+        <h2>Nuestros cursos</h2>
+        <% for (let i=0;i<4;i++){%>
+            <article id="single_class">
+                <figure>
+                    <a href="#"><img src="/images/Cursos Act 2020 Oratoria Liberati-02.png"></a>
+                </figure>
+                <section id="speaker">
+                    <h3>Nombre del curso</h3>
+                    <p>By Alguien</p>
+                </section>
+                <h4>$6000 ARS  |  $65 USD </h4>
+            </article>
+        <%}%>
+    </section>
+    <%-include("./includes/footer")%>
+</body>
+</html>

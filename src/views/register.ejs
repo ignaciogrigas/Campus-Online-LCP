@@ -1,0 +1,60 @@
+<%-include("./includes/head")%>
+    <body>
+        <%-include("./includes/header")%>
+        <%-include("./includes/contactModals")%>
+        <form action="#" method="POST" id= "profile_edit">
+            <h2 id="salutation">¡Hola Nombre!</h2>
+            <p id="salutation_two">Necesitamos que completes todos los datos del formulario con tus datos reales asi podemos darte un mejor servicio de calidad.</p>
+            <section id="profile_data">
+                <article id="profile_photo_edit">
+                    <label for = "profile_photo_input">
+                        <img id="profile_photo_old" src="/images/default_pofile.jpg">
+                        <p>Cambiar foto</p>
+                    </label>
+                    <input type="file" name="profile_photo_input" id="profile_photo_input">
+                </article>
+                <article id="profile_input_data">
+                    <input type="text" placeholder="Apellido" required>
+                    <input type="text" placeholder="Nombre" required>
+                    <select id="nacionality">
+                        <option value="default" selected>Nacionalidad</option>
+                        <option value="1" >Argentino/a</option>
+                        <option value="2" >Colombiano/a</option>
+                    </select>
+                    <select id="sex" required>
+                        <option value="default" selected>Sexo</option>
+                        <option value="1" >Masculino</option>
+                        <option value="2" >Femenino</option>
+                        <option value="3" >Otro</option>
+                    </select>
+                        <input type="date" id="birth_date" required>
+                        <input type="text" disabled placeholder="the_username">
+
+                        <h2>Datos de contacto</h2>
+                        <h4>Si  sos monotributista completa tu CUIT  en la casilla "DNI/CUIT" sino completa tu DNI.</h4>
+                        <input type="email" id="email" placeholder="E-mail" required>
+                        <input type="tel" id="telephone" placeholder="Teléfono" required>
+                        <input type="number" min="8" max="11" placeholder="DNI/CUIT" required>
+                        <select id="country" required>
+                            <option value="default" selected>País</option>
+                            <% let countries= ["Afganistán","Albania","Alemania","Andorra","Angola","Antigua y Barbuda","Arabia Saudita","Argelia","Argentina","Armenia","Australia","Austria","Azerbaiyán","Bahamas","Bangladés","Barbados","Baréin","Bélgica","Belice","Benín","Bielorrusia","Birmania","Bolivia","Bosnia y Herzegovina","Botsuana","Brasil","Brunéi","Bulgaria","Burkina Faso","Burundi","Bután","Cabo Verde","Camboya","Camerún","Canadá","Catar","Chad","Chile","China","Chipre","Ciudad del Vaticano","Colombia","Comoras","Corea del Norte","Corea del Sur","Costa de Marfil","Costa Rica","Croacia","Cuba","Dinamarca","Dominica","Ecuador","Egipto","El Salvador","Emiratos Árabes Unidos","Eritrea","Eslovaquia","Eslovenia","España","Estados Unidos","Estonia","Etiopía","Filipinas","Finlandia","Fiyi","Francia","Gabón","Gambia","Georgia","Ghana","Granada","Grecia","Guatemala","Guyana","Guinea","Guinea ecuatorial","Guinea-Bisáu","Haití","Honduras","Hungría","India","Indonesia","Irak","Irán","Irlanda","Islandia","Islas Marshall","Islas Salomón","Israel","Italia","Jamaica","Japón","Jordania","Kazajistán","Kenia","Kirguistán","Kiribati","Kuwait","Laos","Lesoto","Letonia","Líbano","Liberia","Libia","Liechtenstein","Lituania","Luxemburgo","Madagascar","Malasia","Malaui","Maldivas","Malí","Malta","Marruecos","Mauricio","Mauritania","México","Micronesia","Moldavia","Mónaco","Mongolia","Montenegro","Mozambique","Namibia","Nauru","Nepal","Nicaragua","Níger","Nigeria","Noruega","Nueva Zelanda","Omán","Países Bajos","Pakistán","Palaos","Palestina","Panamá","Papúa Nueva Guinea","Paraguay","Perú","Polonia","Portugal","Reino Unido","República Centroafricana","República Checa","República de Macedonia","República del Congo","República Democrática del Congo","República Dominicana","República Sudafricana","Ruanda","Rumanía","Rusia","Samoa","San Cristóbal y Nieves","San Marino","San Vicente y las Granadinas","Santa Lucía","Santo Tomé y Príncipe","Senegal","Serbia","Seychelles","Sierra Leona","Singapur","Siria","Somalia","Sri Lanka","Suazilandia","Sudán","Sudán del Sur","Suecia","Suiza","Surinam","Tailandia","Tanzania","Tayikistán","Timor Oriental","Togo","Tonga","Trinidad y Tobago","Túnez","Turkmenistán","Turquía","Tuvalu","Ucrania","Uganda","Uruguay","Uzbekistán","Vanuatu","Venezuela","Vietnam","Yemen","Yibuti","Zambia","Zimbabue"]%>
+                            <%for (let i=0;i<countries.length;i++){%>
+                                <option value=<%=i%>><%= countries[i]%></option>
+                            <%}%>
+                        </select>
+                        <select id="province" required>
+                            <option value="default" selected>Provincia</option>
+                            <% let provincies= ["Buenos Aires","Ciudad Autónoma de Buenos Aires","Catamarca","Chaco", "Chubut","Córdoba","Corrientes","Entre Ríos","Formosa","Jujuy","La Pampa","La Rioja","Mendoza","Misiones","Neuquén","Río Negro","Salta","San Juan","San Luis","Santa Cruz","Santa Fe","Santiago del Estero","Tierra del Fuego, Antártida e Islas del Atlántico Sur","Tucumán"]%>
+                            <%for (let j=0;j<provincies.length;j++){%>
+                                <option value=<%=j%>><%= provincies[j]%></option>
+                            <%}%>
+                        </select>
+                        <input type="text" id="address" placeholder="Dirección" required>
+                        <input type="number" min="4" max="4" placeholder="C.P." required>
+                </article>
+            </section>
+            <button type="submit">Guardar y seguir</button>
+        </form>
+        <%-include("./includes/footer")%>
+    </body>
+</html>

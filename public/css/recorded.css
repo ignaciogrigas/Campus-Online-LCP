@@ -1,0 +1,98 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins";
+  background-color: #f5f5f5;
+}
+body h2 {
+  text-align: center;
+  font-size: 1.25rem;
+  color: #575757;
+  margin: 8vw 0;
+  font-weight: 400;
+}
+#all_recorded_classes {
+  margin: 0 8vw;
+}
+table {
+  width: 100%;
+  padding: 4.875vw 8vw;
+  background-color: white;
+  border: 1px solid #7070706b;
+  border-radius: 20px;
+  border-collapse: separate;
+}
+th,
+td {
+  padding: 3.125vw 0;
+  border-bottom: 1px solid #7070706b;
+}
+.class_description {
+  font-size: 0.9rem;
+  color: #575757;
+  text-align: left;
+}
+.class_date {
+  text-align: right;
+  font-size: 0.9rem;
+}
+th.class_date {
+  color: #575757;
+}
+td.class_date {
+  color: #5a359a;
+}
+#calendar_link_mobile,
+#calendar_link_pc {
+  text-align: center;
+  display: block;
+  background-color: #37d187;
+  color: white;
+  padding: 4vw;
+  border-radius: 20px;
+  margin: 8vw;
+  border: none;
+}
+#calendar_link_pc {
+  display: none;
+}
+@media screen and (min-width: 769px) {
+  body h2 {
+    display: inline-block;
+    text-align: left;
+    font-size: 1.5rem;
+    margin: 3.15vw 0 0 6.25vw;
+    font-weight: 450;
+    width: 61.95%;
+  }
+  #all_recorded_classes {
+    margin: 0 6.25vw;
+    max-width: 1680px;
+  }
+  table {
+    width: 100%;
+    padding: 1.8vw 3.125vw;
+  }
+  th,
+  td {
+    padding: 1.8vw 0;
+  }
+  .class_description {
+    font-size: 1.1rem;
+  }
+  .class_date {
+    font-size: 1.1rem;
+  }
+  #calendar_link_pc {
+    display: inline-block;
+    width: 25%;
+    text-align: center;
+    padding: 1vw;
+    border-radius: 20px;
+    margin: 3.15vw 6.25vw 3.15vw 0;
+  }
+  #calendar_link_mobile {
+    display: none;
+  }
+}

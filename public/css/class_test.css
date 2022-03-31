@@ -1,0 +1,119 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins";
+  background-color: #f5f5f5;
+}
+
+#test_info {
+  text-align: center;
+  background-color: white;
+  border-radius: 20px;
+  border: 1px solid #7070706b;
+  margin: auto;
+  margin-top: 8vw;
+  width: 84%;
+  padding: 8vw;
+}
+#test_info h2 {
+  color: #575757;
+  font-size: 1.5rem;
+  font-weight: 450;
+}
+.question_containers {
+  margin: 8vw 0;
+  width: 100%;
+}
+.question_containers h5 {
+  color: #575757;
+  font-size: 1.1rem;
+  padding-bottom: 4vw;
+  text-align: left;
+  font-weight: 400;
+}
+.radio_answers,
+.checkbox_answers {
+  margin-bottom: 1.5vw;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+input[type="radio"],
+input[type="checkbox"] {
+  border: 1px solid #7070706b;
+  width: 1.1rem;
+  height: 1.1rem;
+}
+input[type="checkbox"] {
+  border-radius: 0.5px;
+}
+textarea {
+  width: 100%;
+  padding: 4vw;
+  font-size: 0.9rem;
+  color: #575757;
+  border-radius: 5px;
+  border: 1px solid #7070706b;
+}
+.radio_answers label,
+.checkbox_answers label {
+  margin-left: 1vw;
+  color: #575757;
+}
+#test_form button {
+  background-color: #37d187;
+  color: white;
+  width: 75%;
+  padding: 2.5vw;
+  border-radius: 20px;
+  border: none;
+}
+#back_to_class {
+  margin-top: 8vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#back_to_class a {
+  margin-right: 1.5vw;
+}
+#back_to_class a,
+#back_to_class h4 {
+  color: #575757;
+  font-size: 1.1rem;
+}
+@media screen and (min-width: 769px) {
+  #test_info {
+    margin-top: 3.125vw;
+    width: 87.5vw;
+    padding: 3.125vw;
+    text-align: right;
+  }
+  #test_info h2 {
+    font-size: 1.75rem;
+    text-align: left;
+  }
+  .question_containers {
+    margin: 3.125vw 0;
+  }
+  .question_containers h5 {
+    padding-bottom: 1.56vw;
+  }
+  .radio_answers,
+  .checkbox_answers {
+    margin-bottom: 0.75vw;
+  }
+  #test_form button {
+    width: 35%;
+    padding: 0.75vw;
+    border-radius: 20px;
+    border: none;
+  }
+  #back_to_class {
+    margin-top: 3.125vw;
+  }
+  #back_to_class a {
+    margin-right: 1vw;
+  }
+}

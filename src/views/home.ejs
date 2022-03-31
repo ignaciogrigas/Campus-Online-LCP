@@ -1,0 +1,59 @@
+<%-include("./includes/head")%>
+<body>
+    <%-include("./includes/header")%>
+    <%-include("./includes/contactModals")%>
+    <div id="home_content">
+        <section id="home_left">
+            <article id="calendar_home">
+                <h2>Calendario</h2>
+                <% for (let i=0;i<3;i++){%>
+                    <section class="class_date">
+                        <h5>Nombre de la clase</h5>
+                        <p>10:00 ARG URU | 08:00 COL PER ECU</p>
+                    </section>
+                <%}%>
+            </article>
+            <article id="payment_status_ok">
+                <p>Tus pagos estan al día</p>
+            </article>
+            <article id="payment_status_notok">
+                <p>Adeuda cuota 3 nombre del curso</p>
+            </article>
+        </section>
+        <section id="home_right">
+            <article id="course_of_study">
+                <h2>Mi cursada</h2>
+                <% for (let i=0;i<2;i++){%>
+                    <section class="class">
+                        <figure>
+                            <img src="/images/Cursos Act 2020 Oratoria Liberati-02.png">
+                        </figure>
+                        <div class="class_data">
+                            <h3>Nombre del curso</h3>
+                            <progress value = "65" max = "100"></progress>
+                            <p>Próxima clase: Nombre de la clase</p>
+                            <a href="#">Continuar</a>
+                        </div>
+                    </section>
+                <%}%>
+            </article>
+            <article id="learn">
+                <h2>Aprendé</h2>
+                <% for (let i=0;i<2;i++){%>
+                    <section class="learn_class">
+                        <figure>
+                            <a href="#"><img src="/images/Cursos Act 2020 Oratoria Liberati-02.png"></a>
+                        </figure>
+                        <article class="speaker">
+                            <h3>Nombre del curso</h3>
+                            <p>By Alguien</p>
+                        </article>
+                    </section>
+                <%}%>
+                <a href="#">Ver más +</a>
+            </article>
+        </section>
+    </div>
+    <%-include("./includes/footer")%>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<%-include("./includes/head")%>
+<body>
+    <%-include("./includes/header")%>
+    <%-include("./includes/contactModals")%>
+    <section id="whole_calendar">
+        <div id="calendar_title">
+            <div id="title_container">
+                <h2>Clases en vivo Abril</h2>
+                <a href="#"><i class="fa-solid fa-angle-right"></i></a>
+            </div>
+            <a href="#" id="recorded_classes_pc">Clases grabadas</a>
+        </div>
+        <% for ( let i = 0 ; i<2 ; i++){%>
+            <div class="calendar_container">
+                <% for (let j = 0 ; j <4 ; j++){%>
+                    <div class="specific_date">
+                        <h3 >5 Lunes</h3>
+                        <% for (let k = 0 ; k<3;k++){%>
+                            <div class="specific_class">
+                                <div class="calendar_text">
+                                    <h4>Nombre de la clase</h4>
+                                    <p>El horario</p>
+                                </div>
+                                <i class="fa-solid fa-calendar-plus"></i>
+                            </div>
+                        <%}%>
+                    </div>
+                <%}%>
+            </div>
+        <%}%>
+        <a href="#" id="recorded_classes_mobile">Clases grabadas</a>
+    </section>
+    <%-include("./includes/footer")%>
+</body>
+</html>

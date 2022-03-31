@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+}
+footer {
+  font-family: "Poppins";
+  background-color: #d9d9d9;
+  padding: 8vw;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 8vw;
+}
+footer p {
+  font-size: 0.8rem;
+}
+.fa-envelope,
+.fa-whatsapp {
+  font-size: 1rem;
+  color: #575757;
+  padding-left: 4.5vw;
+}
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal_content {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  margin: 50% auto;
+  padding: 10vw;
+  border: 1px solid #707070;
+  border-radius: 20px;
+  width: 80%;
+}
+.modal_content h3 {
+  font-family: "Poppins";
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 2vw;
+}
+.modal_content a {
+  display: inline-block;
+  width: 95%;
+  font-family: "Poppins";
+  text-align: center;
+  background-color: #37d187;
+  color: white;
+  font-size: 1em;
+  padding: 4vw;
+  margin-top: 8vw;
+  border-radius: 20px;
+}
+
+@media screen and (min-width: 769px) {
+  footer {
+    padding: 2vw;
+    margin-top: 6.25vw;
+    max-width: 1920px;
+  }
+  footer p {
+    font-size: 0.65rem;
+  }
+  .fa-envelope,
+  .fa-whatsapp {
+    font-size: 0.8rem;
+    padding-left: 1.04vw;
+  }
+  .modal_content {
+    margin: 15% auto;
+    padding: 3.6vw;
+    width: 28%;
+    border-radius: 30px;
+  }
+  .modal_content a {
+    font-size: 0.9rem;
+    padding: 1.5vw;
+    margin-top: 1.5vw;
+    border-radius: 30px;
+  }
+}
